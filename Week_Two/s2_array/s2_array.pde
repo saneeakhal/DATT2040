@@ -1,18 +1,15 @@
-//create PVector Arrays
 PVector[] sp;
 PVector[] acc;
 
-//how many 
+
 int num = 222;
 
 void setup() {
   size(800, 800);
  
-  //create new 
   sp = new PVector[num];
   acc = new PVector[num];
  
- //Populate
   for (int i = 0; i < num; i++) {
     sp[i] = new PVector(random(width), random(height), random(3, 100));
     acc[i] = new PVector(random(-17, 17), random(-17, 17), 0.08);
